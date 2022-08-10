@@ -1,5 +1,3 @@
-# linked_lists
-Linked List in PHP
 =======
 # Linked Lists
 Linked Lists implementation in PHP
