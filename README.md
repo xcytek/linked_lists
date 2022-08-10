@@ -15,7 +15,9 @@ foreach (range(1, 5) as $node) {
     $linkedList->push(new Node('Node #' . $node));
 }
 $linkedList->printList();
+```
 
+```
 // Output
 Linked list
 "Node #1" -> "Node #2" -> "Node #3" -> "Node #4" -> "Node #5" -> null
@@ -32,7 +34,9 @@ $nodeNinja2->next = $nodeNinja3;
 $nodeNinja1->next = $nodeNinja2;
 $linkedList->pushAfterPosition($addAfterPosition, $nodeNinja1);
 $linkedList->printList();
+```
 
+```
 // Output
 Linked list
 "Node #1" -> "Node #2" -> "Node ninja 1" -> "Node ninja 2" -> "Node ninja 3" -> "Node #3" -> "Node #4" -> "Node #5" -> null
@@ -44,7 +48,9 @@ Linked list
 $addAfterPosition = 4;
 $linkedList->pushAfterPosition($addAfterPosition, new Node('New node ninja'));
 $linkedList->printList();
+```
 
+```
 // Output
 Linked list
 "Node #1" -> "Node #2" -> "Node ninja 1" -> "Node ninja 2" -> "New node ninja" -> "Node ninja 3" -> "Node #3" -> "Node #4" -> "Node #5" -> null
@@ -55,7 +61,9 @@ Linked list
 // Push a node at the top of the list
 $linkedList->pushAtTop(new Node('First ninja node'));
 $linkedList->printList();
+```
 
+```
 // Output
 Linked list
 "First ninja node" -> "Node #1" -> "Node #2" -> "Node ninja 1" -> "Node ninja 2" -> "New node ninja" -> "Node ninja 3" -> "Node #3" -> "Node #4" -> "Node #5" -> null
@@ -66,7 +74,9 @@ Linked list
 // Remove single node given a position
 $linkedList->deleteAtPosition(3);
 $linkedList->printList();
+```
 
+```
 // Output
 Linked list
 "First ninja node" -> "Node #1" -> "Node ninja 1" -> "Node ninja 2" -> "New node ninja" -> "Node ninja 3" -> "Node #3" -> "Node #4" -> "Node #5" -> null
@@ -77,7 +87,9 @@ Linked list
 // Clear the whole list
 $linkedList->clear();
 $linkedList->printList();
+```
 
+```
 // Output
  [List Empty]
 
